@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { getDatabase, set, ref } from "firebase/database";
+import { app } from "./firebase/firebase";
+import "./App.css";
+const db = getDatabase(app);
 function App() {
+  const addData = () => {
+    set(ref(db, "users/jawhor"), {
+      id: 1,
+      name: "Sanjida",
+      email: "sajijawhor@gmail.com"
+    });
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Thrive</h1>
+      <button onClick={addData}>Add Data To Database</button>
     </div>
   );
 }
