@@ -1,7 +1,7 @@
 import { getDatabase, set, ref } from "firebase/database";
-import { app } from "./firebase/firebase";
+import { firebaseApp } from "./firebaseConfig/firebase";
 import "./App.css";
-const db = getDatabase(app);
+const db = getDatabase(firebaseApp);
 function App() {
   const addData = () => {
     set(ref(db, "users/jawhor"), {
