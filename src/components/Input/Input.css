@@ -1,0 +1,28 @@
+.inputContainer {
+  position: relative;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px;
+}
+
+.inputLabel {
+  display: inline-block;
+  margin-bottom: 2px;
+}
+.inputField {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: 16px;
+  background-color: rgb(32, 32, 78);
+  color: aliceblue;
+  border: 1px solid rgb(73, 86, 97);
+}
+.inputField::placeholder {
+  color: aliceblue;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}

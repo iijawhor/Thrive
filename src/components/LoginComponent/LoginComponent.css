@@ -1,0 +1,85 @@
+.loginComponent {
+  position: relative;
+}
+.logo {
+  margin-bottom: 20px;
+}
+.loginFormContainer {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.loginFormContainerHead {
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.loginFormTitlePara {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.loginFormTitle {
+}
+.loginOptions {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+.loginWithGoogle,
+.loginWithFacebook {
+  /* background-color: rgb(21, 78, 100); */
+  background-color: white;
+  color: rgb(5, 5, 47);
+  padding: 10px 5px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+.border {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  font-family: sans-serif;
+  margin: 10px 0;
+}
+.borderLine {
+  border: 0.5px solid rgb(73, 86, 97);
+  height: 0;
+  width: 100%;
+}
+.linkToSignup {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.linkToSignupLink {
+  color: teal;
+}
+
+.loginFormSubmitButton {
+  width: 100%;
+  background-color: rgb(41, 132, 168);
+  border: none;
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

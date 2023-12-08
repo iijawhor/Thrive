@@ -1,0 +1,12 @@
+.logoutButton {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  outline: none;
+  color: white;
+  background-color: rgb(111, 127, 132);
+}

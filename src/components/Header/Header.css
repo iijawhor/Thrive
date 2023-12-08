@@ -1,0 +1,43 @@
+.header {
+  position: relative;
+  width: 100%;
+  padding: 3px 0;
+  height: 50px;
+  background-color: rgb(247, 247, 247);
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+}
+nav {
+  display: flex;
+}
+.logoContainer {
+  margin-right: 4px;
+}
+.navbarItems {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  position: relative;
+  gap: 5px;
+}
+.navbarItemButton {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  outline: none;
+  color: white;
+  background-color: rgb(41, 132, 168);
+  font-family: sans-serif;
+}
+.navbarItemButton:hover {
+  transition-duration: 0.7s;
+  background-color: rgb(15, 15, 77);
+}
+Link {
+  text-decoration: none;
+}

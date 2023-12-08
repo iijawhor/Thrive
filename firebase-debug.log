@@ -1,0 +1,74 @@
+[debug] [2023-12-07T07:26:21.826Z] ----------------------------------------------------------------------
+[debug] [2023-12-07T07:26:21.827Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jawho\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-07T07:26:21.828Z] CLI Version:   12.9.1
+[debug] [2023-12-07T07:26:21.828Z] Platform:      win32
+[debug] [2023-12-07T07:26:21.828Z] Node Version:  v16.17.0
+[debug] [2023-12-07T07:26:21.829Z] Time:          Thu Dec 07 2023 12:56:21 GMT+0530 (India Standard Time)
+[debug] [2023-12-07T07:26:21.829Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-07T07:26:21.893Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-07T07:26:21.894Z] > authorizing via signed-in user (jawhor.dev@gmail.com)
+[debug] [2023-12-07T07:26:21.894Z] [iam] checking project thrive-6f6ba for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2023-12-07T07:26:21.896Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/thrive-6f6ba:testIamPermissions [none]
+[debug] [2023-12-07T07:26:21.896Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/thrive-6f6ba:testIamPermissions x-goog-quota-user=projects/thrive-6f6ba
+[debug] [2023-12-07T07:26:21.896Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/thrive-6f6ba:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-12-07T07:26:24.160Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/thrive-6f6ba:testIamPermissions 200
+[debug] [2023-12-07T07:26:24.160Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/thrive-6f6ba:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-12-07T07:26:24.161Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba [none]
+[debug] [2023-12-07T07:26:25.108Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba 200
+[debug] [2023-12-07T07:26:25.109Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba {"projectId":"thrive-6f6ba","projectNumber":"1043152203317","displayName":"Thrive","name":"projects/thrive-6f6ba","resources":{"hostingSite":"thrive-6f6ba","realtimeDatabaseInstance":"thrive-6f6ba-default-rtdb"},"state":"DELETED","etag":"1_c1d32e12-aaac-485c-80cf-2cba4f2f11a0"}
+[debug] [2023-12-07T07:26:25.110Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba [none]
+[debug] [2023-12-07T07:26:26.046Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba 200
+[debug] [2023-12-07T07:26:26.046Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba {"projectId":"thrive-6f6ba","projectNumber":"1043152203317","displayName":"Thrive","name":"projects/thrive-6f6ba","resources":{"hostingSite":"thrive-6f6ba","realtimeDatabaseInstance":"thrive-6f6ba-default-rtdb"},"state":"DELETED","etag":"1_c1d32e12-aaac-485c-80cf-2cba4f2f11a0"}
+[info] 
+[info] === Deploying to 'thrive-6f6ba'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2023-12-07T07:26:26.051Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/thrive-6f6ba/locations/-/instances/thrive-6f6ba-default-rtdb [none]
+[debug] [2023-12-07T07:26:28.756Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/thrive-6f6ba/locations/-/instances/thrive-6f6ba-default-rtdb 404
+[debug] [2023-12-07T07:26:28.756Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/thrive-6f6ba/locations/-/instances/thrive-6f6ba-default-rtdb {"error":{"code":404,"message":"Project has been deleted.","status":"NOT_FOUND"}}
+[debug] [2023-12-07T07:26:28.757Z] HTTP Error: 404, Project has been deleted.
+[debug] [2023-12-07T07:26:29.585Z] FirebaseError: HTTP Error: 404, Project has been deleted.
+    at responseToError (C:\Users\jawho\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\jawho\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get instance details for instance: thrive-6f6ba-default-rtdb. See firebase-debug.log for more details.
+[debug] [2023-12-07T07:26:48.399Z] ----------------------------------------------------------------------
+[debug] [2023-12-07T07:26:48.400Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jawho\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --non-interactive
+[debug] [2023-12-07T07:26:48.401Z] CLI Version:   12.9.1
+[debug] [2023-12-07T07:26:48.401Z] Platform:      win32
+[debug] [2023-12-07T07:26:48.401Z] Node Version:  v16.17.0
+[debug] [2023-12-07T07:26:48.402Z] Time:          Thu Dec 07 2023 12:56:48 GMT+0530 (India Standard Time)
+[debug] [2023-12-07T07:26:48.402Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-07T07:26:48.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-07T07:26:48.475Z] > authorizing via signed-in user (jawhor.dev@gmail.com)
+[debug] [2023-12-07T07:26:48.475Z] [iam] checking project thrive-6f6ba for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2023-12-07T07:26:48.478Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/thrive-6f6ba:testIamPermissions [none]
+[debug] [2023-12-07T07:26:48.478Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/thrive-6f6ba:testIamPermissions x-goog-quota-user=projects/thrive-6f6ba
+[debug] [2023-12-07T07:26:48.478Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/thrive-6f6ba:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-12-07T07:26:50.539Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/thrive-6f6ba:testIamPermissions 200
+[debug] [2023-12-07T07:26:50.540Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/thrive-6f6ba:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-12-07T07:26:50.541Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba [none]
+[debug] [2023-12-07T07:26:51.716Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba 200
+[debug] [2023-12-07T07:26:51.717Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba {"projectId":"thrive-6f6ba","projectNumber":"1043152203317","displayName":"Thrive","name":"projects/thrive-6f6ba","resources":{"hostingSite":"thrive-6f6ba","realtimeDatabaseInstance":"thrive-6f6ba-default-rtdb"},"state":"DELETED","etag":"1_c1d32e12-aaac-485c-80cf-2cba4f2f11a0"}
+[debug] [2023-12-07T07:26:51.717Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba [none]
+[debug] [2023-12-07T07:26:53.090Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba 200
+[debug] [2023-12-07T07:26:53.090Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thrive-6f6ba {"projectId":"thrive-6f6ba","projectNumber":"1043152203317","displayName":"Thrive","name":"projects/thrive-6f6ba","resources":{"hostingSite":"thrive-6f6ba","realtimeDatabaseInstance":"thrive-6f6ba-default-rtdb"},"state":"DELETED","etag":"1_c1d32e12-aaac-485c-80cf-2cba4f2f11a0"}
+[info] 
+[info] === Deploying to 'thrive-6f6ba'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2023-12-07T07:26:53.095Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/thrive-6f6ba/locations/-/instances/thrive-6f6ba-default-rtdb [none]
+[debug] [2023-12-07T07:26:55.444Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/thrive-6f6ba/locations/-/instances/thrive-6f6ba-default-rtdb 404
+[debug] [2023-12-07T07:26:55.445Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/thrive-6f6ba/locations/-/instances/thrive-6f6ba-default-rtdb {"error":{"code":404,"message":"Project has been deleted.","status":"NOT_FOUND"}}
+[debug] [2023-12-07T07:26:55.446Z] HTTP Error: 404, Project has been deleted.
+[debug] [2023-12-07T07:26:56.165Z] FirebaseError: HTTP Error: 404, Project has been deleted.
+    at responseToError (C:\Users\jawho\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\jawho\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get instance details for instance: thrive-6f6ba-default-rtdb. See firebase-debug.log for more details.

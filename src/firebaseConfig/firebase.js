@@ -1,13 +1,12 @@
 import { initializeApp } from "firebase/app";
 const firebaseConfig = {
-  apiKey: "AIzaSyDgJljoxvj_2C8FZc8YK40qvtLzDmoNCus",
-  authDomain: "thrive-6f6ba.firebaseapp.com",
-  projectId: "thrive-6f6ba",
-  storageBucket: "thrive-6f6ba.appspot.com",
-  messagingSenderId: "1043152203317",
-  appId: "1:1043152203317:web:b6ec99f745d6455d6c8b7c",
-  measurementId: "G-7JXTSQWH7M",
-  databaseURL: "https://thrive-6f6ba-default-rtdb.firebaseio.com"
+  apiKey: "AIzaSyB_3myBD3cxXdTlyA8Q0nZg-BToA2YUrZQ",
+  authDomain: "thrive-c39c1.firebaseapp.com",
+  projectId: "thrive-c39c1",
+  storageBucket: "thrive-c39c1.appspot.com",
+  messagingSenderId: "948357526814",
+  appId: "1:948357526814:web:348428437eabb66e2f450f",
+  measurementId: "G-8CZFBWE7RH"
 };
 
 // Initialize Firebase

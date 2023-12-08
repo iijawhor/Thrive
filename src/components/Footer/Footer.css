@@ -1,0 +1,104 @@
+.footer {
+  position: relative;
+  background-color: rgb(41, 132, 168);
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 50px;
+}
+.footerContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.footerLogo {
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: "Times New Roman", Times, serif;
+}
+.footerSectionHeading {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: rgb(195, 225, 237);
+}
+.thriveSocialConnects {
+  width: fit-content;
+  position: relative;
+  height: fit-content;
+}
+.thriveSocialConnectsItems {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  margin-top: 10px;
+}
+.thriveSocialConnectsItem {
+  cursor: pointer;
+}
+.thriveSocialConnectsItemILogo {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.footerSupportItems,
+.footerAboutItems {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+}
+.footerSupportItem,
+.footerAboutItem {
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  font-family: serif;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.footerCheckBox {
+  display: flex;
+  position: relative;
+  gap: 6px;
+  text-align: center;
+  align-items: center;
+}
+.footerCheckboxInput {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+.footerCheckBoxText {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  font-family: sans-serif;
+  font-weight: 550;
+}
+.footerFormInputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 15px;
+}
+.footerInput {
+  background-color: white !important;
+  color: black !important;
+}
+.footerInput::placeholder {
+  color: black !important;
+  letter-spacing: 0.6px;
+}
+.footerButton {
+  border: 1px solid teal;
+  padding: 6px 20px;
+  background-color: rgb(32, 78, 97);
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+}

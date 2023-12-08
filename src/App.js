@@ -1,21 +1,37 @@
-import { getDatabase, set, ref } from "firebase/database";
-import { firebaseApp } from "./firebaseConfig/firebase";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-const db = getDatabase(firebaseApp);
+import authService from "./firebase/firebaseAuthentication";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import { Outlet } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login, logout } from "./store/authSlice";
 function App() {
-  const addData = () => {
-    set(ref(db, "users/jawhor"), {
-      id: 1,
-      name: "Sanjida",
-      email: "sajijawhor@gmail.com"
-    });
-  };
-  return (
+  const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    authService
+      .getCurrentUser()
+      .then((userData) => {
+        if (userData) {
+          dispatch(login({ userData }));
+        } else {
+          dispatch(logout());
+        }
+      })
+      .finally(() => setLoading(false));
+  }, [dispatch]);
+  return !loading ? (
     <div className="App">
-      <h1>Thrive</h1>
-      <button onClick={addData}>Add Data To Database</button>
+      <div className="">
+        <Header />
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </div>
-  );
+  ) : null;
 }
 
 export default App;
